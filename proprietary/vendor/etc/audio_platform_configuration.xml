@@ -80,7 +80,10 @@
     <latency source="deep-buffer-playback" sink="speaker" milliseconds="70" />
     <latency source="deep-buffer-playback" sink="usb-device" milliseconds="70" />
     <latency source="deep-buffer-playback" sink="usb-headset" milliseconds="70" />
-    <latency source="deep-buffer-playback" sink="bluetooth-a2dp-device" milliseconds="180" />
+    <latency source="deep-buffer-playback" sink="bluetooth-a2dp-device" milliseconds="80" />
+    <latency source="deep-buffer-playback" sink="bluetooth-low-energy-headset" milliseconds="80" />
+    <latency source="deep-buffer-playback" sink="bluetooth-low-energy-speaker" milliseconds="80" />
+    <latency source="deep-buffer-playback" sink="bluetooth-low-energy-broadcast" milliseconds="150" />
 
     <latency source="compress-offload-playback" sink="speaker" milliseconds="40" />
     <latency source="compress-offload-playback" sink="usb-device" milliseconds="40" />
@@ -88,6 +91,13 @@
     <latency source="compress-offload-playback" sink="bluetooth-a2dp-device" milliseconds="70" />
 
     <latency source="immersive-playback" sink="bluetooth-a2dp-device" milliseconds="100" />
+    <latency source="spatializer-offload-playback" sink="speaker" milliseconds="100" />
+    <latency source="spatializer-offload-playback" sink="usb-device" milliseconds="80" />
+    <latency source="spatializer-offload-playback" sink="usb-headset" milliseconds="80" />
+    <latency source="spatializer-offload-playback" sink="bluetooth-a2dp-device" milliseconds="150" />
+    <latency source="spatializer-offload-playback" sink="bluetooth-low-energy-headset" milliseconds="80" />
+    <latency source="spatializer-offload-playback" sink="bluetooth-low-energy-speaker" milliseconds="80" />
+    <latency source="spatializer-offload-playback" sink="bluetooth-low-energy-broadcast" milliseconds="150" />
 
     <latency source="microphones" sink="primary-capture" milliseconds="160" />
     <latency source="back-microphones" sink="primary-capture" milliseconds="160" />

@@ -8,8 +8,9 @@
 # See go/pixel-perf-experiment-whatif for more info.
 
 delay_seconds="$1"
+prop_name="$2"
 
-if [ -n "$delay_seconds" ]; then
+if [ -n "$delay_seconds" ] && [ -n "$prop_name" ]; then
     sleep "$delay_seconds"
-    /vendor/bin/setprop vendor.perf.allow_experiments 1
+    /vendor/bin/setprop "$prop_name" 1
 fi

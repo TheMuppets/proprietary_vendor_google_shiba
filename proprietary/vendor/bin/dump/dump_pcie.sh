@@ -9,3 +9,11 @@ for f in /sys/devices/platform/*.pcie/link_stats/*
 do
   echo "$f: `cat $f`"
 done
+
+echo "--- pcie saved coredumps ---"
+for file in /data/vendor/pcie/*
+do
+  echo "--- coredump from: $file ---"
+  cat "$file"
+  echo ""
+done

@@ -9,9 +9,14 @@
 					"name": "segmentation",
 				},
 				{
+					"class": "CoordstateAlgorithm",
+					"name": "coordstate",
+					"blocked_by": ["segmentation"]
+				},
+				{
 					"class": "PeakTrackerAlgorithm",
 					"name": "peak_tracker",
-					"blocked_by": ["segmentation"],
+					"blocked_by": ["coordstate"],
 					"parameters": {
 					},
 				},

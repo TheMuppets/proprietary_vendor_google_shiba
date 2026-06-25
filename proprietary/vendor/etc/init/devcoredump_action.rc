@@ -1,0 +1,5 @@
+on post-fs-data
+    mkdir /data/vendor/pcie 0755 root root
+
+on property:sys.boot_completed=1
+    exec -- /vendor/bin/devcoredump_action --boot-up

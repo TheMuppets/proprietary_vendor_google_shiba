@@ -425,6 +425,10 @@
     <path name="primary-playback -> bt" />
   </path>
 
+  <path name="primary-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="primary-playback -> bt" />
+  </path>
+
   <path name="primary-playback-0 -> usb">
     <ctl name="USB_RX Mixer EP2" value="1" />
   </path>
@@ -501,6 +505,10 @@
     <path name="raw-playback -> bt" />
   </path>
 
+  <path name="raw-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="raw-playback -> bt" />
+  </path>
+
   <path name="raw-playback-0 -> usb">
     <ctl name="USB_RX Mixer RAW" value="1" />
   </path>
@@ -574,6 +582,10 @@
   </path>
 
   <path name="deep-buffer-playback-0 -> bluetooth-low-energy-broadcast">
+    <path name="deep-buffer-playback -> bt" />
+  </path>
+
+  <path name="deep-buffer-playback-0 -> bluetooth-low-energy-hearing-aid">
     <path name="deep-buffer-playback -> bt" />
   </path>
 
@@ -659,6 +671,10 @@
     <path name="compress-offload-playback -> bt" />
   </path>
 
+  <path name="compress-offload-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="compress-offload-playback -> bt" />
+  </path>
+
   <path name="compress-offload-playback-0 -> usb">
     <path name="compress-offload-playback" />
     <ctl name="USB_RX Mixer EP7" value="1" />
@@ -736,6 +752,10 @@
     <path name="mmap-pcm-offload-playback -> bt" />
   </path>
 
+  <path name="mmap-pcm-offload-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="mmap-pcm-offload-playback -> bt" />
+  </path>
+
   <path name="mmap-pcm-offload-playback -> usb">
     <path name="compress-offload-playback-0 -> usb" />
   </path>
@@ -809,6 +829,10 @@
   </path>
 
   <path name="mmap-playback-0 -> bluetooth-low-energy-broadcast">
+    <path name="mmap-playback -> bt" />
+  </path>
+
+  <path name="mmap-playback-0 -> bluetooth-low-energy-hearing-aid">
     <path name="mmap-playback -> bt" />
   </path>
 
@@ -900,6 +924,10 @@
     <path name="voip-playback -> bt" />
   </path>
 
+  <path name="voip-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="voip-playback -> bt" />
+  </path>
+
   <path name="voip-playback-0 -> usb">
     <ctl name="USB_RX Mixer VOIP" value="1" />
   </path>
@@ -970,6 +998,10 @@
   </path>
 
   <path name="spatializer-offload-playback-0 -> bluetooth-low-energy-broadcast">
+    <path name="spatializer-offload-playback -> bt" />
+  </path>
+
+  <path name="spatializer-offload-playback-0 -> bluetooth-low-energy-hearing-aid">
     <path name="spatializer-offload-playback -> bt" />
   </path>
 
@@ -1047,6 +1079,10 @@
     <path name="haptic-playback -> bt" />
   </path>
 
+  <path name="haptic-playback-0 -> bluetooth-low-energy-hearing-aid">
+    <path name="haptic-playback -> bt" />
+  </path>
+
   <path name="haptic-playback-0 -> usb">
     <ctl name="USB_RX Mixer EP3" value="1" />
     <ctl name="TDM_0_RX Mixer EP8" value="1" />
@@ -1093,6 +1129,10 @@
     <ctl name="EP1 TX Mixer BT_TX" value="1" />
   </path>
 
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> primary-capture-0">
+    <ctl name="EP1 TX Mixer BT_TX" value="1" />
+  </path>
+
   <path name="usb-microphones -> hifi-capture-0">
     <ctl name="HIFI TX Mixer USB_TX" value="1" />
   </path>
@@ -1133,6 +1173,10 @@
     <ctl name="VOIP TX Mixer BT_TX" value="1" />
   </path>
 
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> voip-capture-0">
+    <ctl name="VOIP TX Mixer BT_TX" value="1" />
+  </path>
+
   <path name="microphones -> voip-gsenet-capture-0">
     <ctl name="Incall Capture Stream3" value="3MIC" />
     <ctl name="VOIP TX Mixer INTERNAL_MIC_TX" value="1" />
@@ -1166,6 +1210,11 @@
     <ctl name="VOIP TX Mixer BT_TX" value="1" />
   </path>
 
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> voip-gsenet-capture-0">
+    <ctl name="Incall Capture Stream3" value="3MIC" />
+    <ctl name="VOIP TX Mixer BT_TX" value="1" />
+  </path>
+
   <path name="microphones -> fast-capture-0">
     <ctl name="EP3 TX Mixer INTERNAL_MIC_TX" value="1" />
   </path>
@@ -1191,6 +1240,10 @@
   </path>
 
   <path name="bluetooth-low-energy-headset-microphones -> fast-capture-0">
+    <ctl name="EP3 TX Mixer BT_TX" value="1" />
+  </path>
+
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> fast-capture-0">
     <ctl name="EP3 TX Mixer BT_TX" value="1" />
   </path>
 
@@ -1236,6 +1289,10 @@
     <ctl name="EP2 TX Mixer BT_TX" value="1" />
   </path>
 
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> mmap-capture-0">
+    <ctl name="EP2 TX Mixer BT_TX" value="1" />
+  </path>
+
   <!-- voice-call dynamic route -->
   <path name="voice-call-downlink-0 -> speaker">
     <ctl name="TDM_0_RX Mixer EP5" value="1" />
@@ -1270,6 +1327,10 @@
   </path>
 
   <path name="voice-call-downlink-0 -> bluetooth-low-energy-broadcast">
+    <path name="voice-call-downlink-0 -> bt" />
+  </path>
+
+  <path name="voice-call-downlink-0 -> bluetooth-low-energy-hearing-aid">
     <path name="voice-call-downlink-0 -> bt" />
   </path>
 
@@ -1314,6 +1375,10 @@
   </path>
 
   <path name="bluetooth-low-energy-headset-microphones -> voice-call-uplink-0">
+    <ctl name="EP4 TX Mixer BT_TX" value="1" />
+  </path>
+
+  <path name="bluetooth-low-energy-hearing-aid-microphones -> voice-call-uplink-0">
     <ctl name="EP4 TX Mixer BT_TX" value="1" />
   </path>
 
@@ -1452,6 +1517,10 @@
   </path>
 
   <path name="bluetooth-low-energy-headset-microphones">
+    <path name="bluetooth-sco-headset-microphones" />
+  </path>
+
+  <path name="bluetooth-low-energy-hearing-aid-microphones">
     <path name="bluetooth-sco-headset-microphones" />
   </path>
 

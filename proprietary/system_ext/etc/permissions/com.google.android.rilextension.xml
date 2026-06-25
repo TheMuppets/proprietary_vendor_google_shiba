@@ -20,5 +20,6 @@
     <privapp-permissions package="com.google.android.rilextension">
         <permission name="android.permission.READ_PHONE_STATE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
     </privapp-permissions>
 </permissions>

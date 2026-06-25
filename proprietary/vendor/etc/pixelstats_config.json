@@ -83,7 +83,9 @@
     "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/dpcd_read_failures",
     "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/edid_invalid_failures",
     "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/sink_count_invalid_failures",
-    "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/link_unstable_failures"
+    "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/link_unstable_failures",
+    "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/connection_success",
+    "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/connection_failure"
   ],
   "DisplayPortDSCStatsPaths": [
     "/sys/devices/platform/exynos-drm/displayport/drm-displayport-stats/fec_dsc_supported",
@@ -118,5 +120,42 @@
   ],
   "SpeakerVersionPath": "/sys/devices/platform/audiometrics/speaker_version",
   "AudioUevent": "/devices/virtual/amcs/amcs",
-  "TypeCPartnerUevent": "PRODUCT_TYPE="
+  "TypeCPartnerUevent": "PRODUCT_TYPE=",
+  "FGRegDumpPath": [
+    "/sys/class/power_supply/maxfg/registers_dump",
+    "/sys/class/power_supply/max77779fg/registers_dump",
+    "/sys/class/power_supply/maxfg_base/registers_dump",
+    "/sys/class/power_supply/maxfg_secondary/registers_dump"
+  ],
+  "HardwareComponentInfoConfig": {
+    "APPLICATION_PROCESSOR": {
+      "vendor": {"Source": "Property", "Path": "ro.soc.manufacturer"},
+      "hw_version": {"Source": "Property", "Path": "ro.boot.hw.soc.rev"}
+    },
+    "MEMORY": {
+      "vendor": {"Source":  "Property", "Path": "ro.boot.ddr_info"},
+      "size": {"Source":  "Property", "Path": "ro.boot.ddr_size"}
+    },
+    "STORAGE": {
+      "vendor": {"Source":  "File", "Path": "/sys/bus/scsi/devices/0:0:0:0/vendor"},
+      "size": {"Source":  "Property", "Path": "ro.boot.hardware.ufs"},
+      "sw_version": {"Source":  "File", "Path": "/sys/bus/scsi/devices/0:0:0:0/rev"}
+    },
+    "DISPLAY": {
+      "vendor": {"Source":  "File", "Path": "/sys/devices/platform/exynos-drm/primary-panel/panel_name"},
+      "serial_number": {"Source":  "File", "Path": "/sys/devices/platform/exynos-drm/primary-panel/serial_number"}
+    },
+    "BATTERY": {
+      "size": {"Source":  "File", "Path": "/sys/class/power_supply/battery/charge_full_design"},
+      "serial_number": {"Source": "File", "Paths": [
+        "/sys/class/power_supply/maxfg_base/serial_number",
+        "/sys/class/power_supply/max77779fg/serial_number",
+        "/sys/class/power_supply/maxfg/serial_number"
+      ]}
+    },
+    "BATTERY_SECONDARY": {
+      "size": {"Source":  "File", "Path": "/sys/class/power_supply/battery/charge_full_design"},
+      "serial_number": {"Source": "File", "Path": "/sys/class/power_supply/maxfg_secondary/serial_number", "Required":  true}
+    }
+  }
 }

@@ -205,6 +205,7 @@
 
 # TPU
 /dev/edgetpu-soc            0660   system     system
+/dev/edgetpu-limited        0660   system     system
 
 # DSP
 /dev/gxp                0666   system     camera

@@ -1,0 +1,28 @@
+# go/pixel-perf-proxy-execution-experiment
+
+# The sched_proxy_exec setting is one-way toggle only; therefore, there is no
+# way to ramp it down.
+
+# Set up the experiment for mustang.
+on property:vendor.perf.allow_experiments=1 \
+    && property:ro.build.product=mustang \
+    && property:vendor.pixel.system.phenotype.perf.Perf__proxy_execution_experiment=true
+    write /sys/kernel/sched_proxy_exec/enabled 1
+
+# Set up the experiment for komodo.
+on property:vendor.perf.allow_experiments=1 \
+    && property:ro.build.product=komodo \
+    && property:vendor.pixel.system.phenotype.perf.Perf__proxy_execution_experiment=true
+    write /sys/kernel/sched_proxy_exec/enabled 1
+
+# Set up the experiment for husky.
+on property:vendor.perf.allow_experiments=1 \
+    && property:ro.build.product=husky \
+    && property:vendor.pixel.system.phenotype.perf.Perf__proxy_execution_experiment=true
+    write /sys/kernel/sched_proxy_exec/enabled 1
+
+# Set up the experiment for cheetah.
+on property:vendor.perf.allow_experiments=1 \
+    && property:ro.build.product=cheetah \
+    && property:vendor.pixel.system.phenotype.perf.Perf__proxy_execution_experiment=true
+    write /sys/kernel/sched_proxy_exec/enabled 1

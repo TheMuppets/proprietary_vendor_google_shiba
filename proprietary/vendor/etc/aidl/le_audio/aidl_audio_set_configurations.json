@@ -383,6 +383,20 @@
             ]
         },
         {
+            "name": "Two-OneChan-SnkAse-Lc3_24_2-Two-OneChan-SrcAse-Lc3_24_2_Low_Latency",
+            "codec_config_name": "Two-OneChan-SnkAse-Lc3_24_2-Two-OneChan-SrcAse-Lc3_24_2",
+            "qos_config_name": [
+                "QoS_Config_Low_Latency"
+            ]
+        },
+        {
+            "name": "Two-OneChan-SnkAse-Lc3_24_1-Two-OneChan-SrcAse-Lc3_24_1_Low_Latency",
+            "codec_config_name": "Two-OneChan-SnkAse-Lc3_24_1-Two-OneChan-SrcAse-Lc3_24_1",
+            "qos_config_name": [
+                "QoS_Config_Low_Latency"
+            ]
+        },
+        {
             "name": "Two-OneChan-SnkAse-Lc3_16_1-Two-OneChan-SrcAse-Lc3_16_1_Low_Latency",
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_16_1-Two-OneChan-SrcAse-Lc3_16_1",
             "qos_config_name": [
@@ -1087,6 +1101,14 @@
             "codec_config_name": "Two-OneChan-SnkAse-Lc3_48_1",
             "qos_config_name": [
                 "QoS_Config_48_1_2"
+            ]
+        },
+        {
+            "name": "One-TwoChan-SnkAse-One-OneChan-SrcAse-Opus_192_High_Reliability",
+            "codec_config_name": "One-TwoChan-SnkAse-One-OneChan-SrcAse-Opus_192",
+            "qos_config_name": [
+                "QoS_Config_High_Reliability",
+                "QoS_Config_48_2_1"
             ]
         },
         {
@@ -2979,6 +3001,212 @@
             ]
         },
         {
+            "name": "Two-OneChan-SnkAse-Lc3_24_2-Two-OneChan-SrcAse-Lc3_24_2",
+            "subconfigurations": [
+                {
+                    "ase_cnt": 2,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 6,
+                        "vendor_company_id": 0,
+                        "vendor_codec_id": 0
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    40,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 1
+                },
+                {
+                    "ase_cnt": 2,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 6,
+                        "vendor_company_id": 0,
+                        "vendor_codec_id": 0
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    40,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 1
+                }
+            ]
+        },
+        {
+            "name": "Two-OneChan-SnkAse-Lc3_24_1-Two-OneChan-SrcAse-Lc3_24_1",
+            "subconfigurations": [
+                {
+                    "ase_cnt": 2,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 6,
+                        "vendor_company_id": 0,
+                        "vendor_codec_id": 0
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    30,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 1
+                },
+                {
+                    "ase_cnt": 2,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 6,
+                        "vendor_company_id": 0,
+                        "vendor_codec_id": 0
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    30,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 1
+                }
+            ]
+        },
+        {
             "name": "One-TwoChan-SnkAse-Lc3_32_2-One-TwoChan-SrcAse-Lc3_32_2",
             "subconfigurations": [
                 {
@@ -4452,6 +4680,100 @@
                         }
                     ],
                     "ase_channel_cnt": 2
+                }
+            ]
+        },
+        {
+            "name": "One-TwoChan-SnkAse-One-OneChan-SrcAse-Opus_192",
+            "subconfigurations": [
+                {
+                    "ase_cnt": 1,
+                    "direction": "SINK",
+                    "codec_id": {
+                        "coding_format": 255,
+                        "vendor_company_id": 224,
+                        "vendor_codec_id": 1
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "sampling_frequency",
+                            "type": 1,
+                            "compound_value": {
+                                "value": [
+                                    8
+                                ]
+                            }
+                        },
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    224,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 2
+                },
+                {
+                    "ase_cnt": 1,
+                    "direction": "SOURCE",
+                    "codec_id": {
+                        "coding_format": 255,
+                        "vendor_company_id": 224,
+                        "vendor_codec_id": 2
+                    },
+                    "codec_configuration": [
+                        {
+                            "name": "frame_duration",
+                            "type": 2,
+                            "compound_value": {
+                                "value": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "name": "octets_per_codec_frame",
+                            "type": 4,
+                            "compound_value": {
+                                "value": [
+                                    15,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "name": "codec_frame_blocks_per_sdu",
+                            "type": 5,
+                            "compound_value": {
+                                "value": [
+                                    1
+                                ]
+                            }
+                        }
+                    ],
+                    "ase_channel_cnt": 1
                 }
             ]
         },
@@ -12658,6 +12980,11 @@
             "name": "QoS_Config_48_1_2",
             "retransmission_number": 13,
             "max_transport_latency": 75
+        },
+        {
+            "name": "QoS_Config_48_2_1",
+            "retransmission_number": 2,
+            "max_transport_latency": 20
         },
         {
             "name": "QoS_Config_48_2_2",

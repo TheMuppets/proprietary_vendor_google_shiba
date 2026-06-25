@@ -62,6 +62,7 @@
         {
             "name": "Media",
             "configurations": [
+                "One-TwoChan-SnkAse-One-OneChan-SrcAse-Opus_192_High_Reliability",
                 "One-TwoChan-SnkAse-Opus_192_High_Reliability",
                 "Two-OneChan-SnkAse-Lc3_48_4_High_Reliability",
                 "Two-OneChan-SnkAse-Lc3_48_4_2",
@@ -147,6 +148,8 @@
                 "Two-OneChan-SnkAse-Lc3_48_1_Low_Latency",
                 "Two-OneChan-SnkAse-Lc3_32_2-Two-OneChan-SrcAse-Lc3_32_2_1",
                 "Two-OneChan-SnkAse-Lc3_32_2-Two-OneChan-SrcAse-Lc3_32_2_Low_Latency",
+                "Two-OneChan-SnkAse-Lc3_24_2-Two-OneChan-SrcAse-Lc3_24_2_Low_Latency",
+                "Two-OneChan-SnkAse-Lc3_24_1-Two-OneChan-SrcAse-Lc3_24_1_Low_Latency",
                 "Two-OneChan-SnkAse-Lc3_16_2-Two-OneChan-SrcAse-Lc3_16_2_Low_Latency",
                 "Two-OneChan-SnkAse-Lc3_16_1-Two-OneChan-SrcAse-Lc3_16_1_Low_Latency",
                 "Two-OneChan-SnkAse-Lc3_48_4-Two-OneChan-SrcAse-Lc3_16_2_Low_Latency",
